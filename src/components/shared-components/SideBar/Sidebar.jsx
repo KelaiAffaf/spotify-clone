@@ -4,8 +4,6 @@ import Logo from '../../../assets/images/Spotify-Logo.svg'
 import Item from './Sidebar-Component/Item'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faMagnifyingGlass,faPlus, faHeart, faMusic } from '@fortawesome/free-solid-svg-icons'
-// import {faCollection}
-// 
 
 function Sidebar() {
     return (
