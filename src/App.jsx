@@ -1,17 +1,19 @@
 import { useState } from 'react'
-import logo from './assets/images/logo.svg'
+
+
 import './App.css'
-import Cards from './components/Cards'
-import CardsLecture from './components/CardsLecture'
+import Navbar from './components/shared-components/Navbar/navbar'
+import StickyFooter from "./components/shared-components/Footer/stickyFooter"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
-      <Cards />
-      <CardsLecture/>
-      
+
+      <Navbar />
+      <StickyFooter/>
+
     </div>
   )
 }
