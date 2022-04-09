@@ -1,0 +1,83 @@
+.SideBarContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    overflow:hidden;
+    transition: all 0.5s ease-in-out ;
+    
+    
+    
+    
+    
+}
+
+.SideBar{
+    padding: 10px;
+    /* position: absolute; */
+    
+
+    /* padding: 20px; */
+    /* border: 1px solid #234521; */
+    overflow:hidden;
+    transition: all 0.5s ease-in-out ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 20px;
+    /* background-color: red; */
+}
+
+
+.SideBar-Icon{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    margin-left: -30px;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid red; */
+
+}
+
+.SideBar-Item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border: 2px solid blue; */
+
+}
+/* .Items{
+    background-color: aqua;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid green;
+} */
+#logo{
+    height: 20vh;
+    /* background-color:; */
+    
+}
+.up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    /* background-color: red; */
+    margin-bottom: 20px;
+}
+
