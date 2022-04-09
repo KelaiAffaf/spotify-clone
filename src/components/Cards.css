@@ -1,0 +1,35 @@
+.cardStructure {
+    margin:10px 10px 10px 10px;
+    background-color: #121212;
+    border-radius: 5%;
+    width:350px;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cardStructure:hover{
+    background-color: #727272;
+}
+
+.imageAlbum>img{
+    width:90%;
+    margin-top: 15px;
+}
+
+.textStyle{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.title{
+    color: white;
+    max-height:20px ;
+}
+
+.auteur{
+    color: LightGrey;
+}
