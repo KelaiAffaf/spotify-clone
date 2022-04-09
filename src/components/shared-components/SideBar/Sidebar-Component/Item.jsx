@@ -1,3 +1,5 @@
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import './Item.css'
 
@@ -5,10 +7,14 @@ function Item({title , icon}) {
   return (
     <div className='ItemContainer'>
         <div className='Item-icon'>
-            <img src={icon} alt=""  id='logo'/>
-            </div>
+
+           <div className="icon">
+               {icon}
+           </div>
+            </div> 
         <div className='Item-title'>
             {title}
+            {/* welcommew */}
             </div>
 
 
