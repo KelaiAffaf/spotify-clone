@@ -1,0 +1,48 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.stickyFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute; /*=>  sticky */ 
+    bottom: 0;
+    padding: 8px 20px;
+    width: 100%;
+    height: 68px;
+    color: #ffffff;
+    background: linear-gradient(to right, #AE2896, rgb(80, 155, 245));
+    border-top: #000 solid 1px;
+}
+.discription {
+    margin-left: 15px ;
+    width: 100%;
+}
+.discription p:nth-child(1){
+    font-size: small;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.discription p:nth-child(2){
+    /* font-size: small; */
+    margin-top: 0;
+    padding-top: 0;
+}
+/*  */
+.stickyFooter > div > button { 
+    height: 50px;
+    width: 154px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 12px;
+    /* cursor: pointer ; */
+    border: none;
+    background-color: #ffffff;
+    color: #000;
+}
+.stickyFooter > div > button:hover{
+    /* font-size: 14.5px; */
+    transform: scale(1.1);
+}

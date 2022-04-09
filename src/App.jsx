@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 import './App.css'
@@ -9,6 +10,20 @@ function App() {
   return (
     <div className="App">
      <Page1/>
+=======
+import { useState } from 'react'
+
+import './App.css'
+import Navbar from './components/shared-components/navbar'
+import StickyFooter from "./components/shared-components/stickyFooter"
+
+function App() {
+
+  return (
+    <div className="App">
+      <Navbar />
+      <StickyFooter/>
+>>>>>>> main
     </div>
   )
 }
