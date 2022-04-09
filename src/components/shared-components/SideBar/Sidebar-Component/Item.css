@@ -46,5 +46,9 @@
 
 .Item-title:hover{
     transition: all 0.6s ease-in-out;
+<<<<<<< HEAD
     color: #fff;
+=======
+    color: #1fdf64;
+>>>>>>> 8b29a052251907fa9e2b18ce5ac6b59a7b455e98
 } 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 import './App.css'
@@ -12,18 +13,24 @@ function App() {
      <Page1/>
 =======
 import { useState } from 'react'
+=======
+>>>>>>> 8b29a052251907fa9e2b18ce5ac6b59a7b455e98
 
-import './App.css'
-import Navbar from './components/shared-components/navbar'
-import StickyFooter from "./components/shared-components/stickyFooter"
+import Login from './pages/login'
+
 
 function App() {
+  
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <Navbar />
       <StickyFooter/>
 >>>>>>> main
+=======
+     <Login/>
+>>>>>>> 8b29a052251907fa9e2b18ce5ac6b59a7b455e98
     </div>
   )
 }
