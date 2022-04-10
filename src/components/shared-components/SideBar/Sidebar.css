@@ -1,19 +1,18 @@
 .SideBarContainer{
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 20%;
+    /* width: 20%; */
     height: 100vh;
     background-color: #000;
     color: #fff;
     overflow:hidden;
     transition: all 0.5s ease-in-out ;
     
-    
-    
-    
-    
+    /*    */
+    width: 235px;
 }
 
 .SideBar{
@@ -68,7 +67,8 @@
     border: 2px solid green;
 } */
 #logo{
-    height: 20vh;
+    height: 16vh;
+    margin: -20px 0 0 -5px;
     /* background-color:; */
     
 }

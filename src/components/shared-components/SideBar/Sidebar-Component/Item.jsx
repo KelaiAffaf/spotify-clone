@@ -6,16 +6,16 @@ import './Item.css'
 function Item({title , icon}) {
   return (
     <div className='ItemContainer'>
-        <div className='Item-icon'>
+      <div className='Item-icon'>
 
-           <div className="icon">
-               {icon}
-           </div>
-            </div> 
-        <div className='Item-title'>
-            {title}
-            {/* welcommew */}
-            </div>
+        <div className="icon">
+            {icon}
+        </div>
+      </div> 
+      <a href='/' className='Item-title'>
+        {title}
+        {/* welcommew */}
+      </a>
 
 
 
