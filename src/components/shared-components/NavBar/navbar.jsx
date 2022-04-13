@@ -1,7 +1,9 @@
 import React from 'react'
-import style from './style.css'
+import './styleNav.css'
 import arrowRight from "../../../assets/images/arrowright.svg"
 import arrowLeft from "../../../assets/images/arrowleft.svg"
+import { Link } from 'react-router-dom'
+
 function Navbar() {
     return (
         <div className='bigdiv'>
@@ -12,11 +14,11 @@ function Navbar() {
                 
                 </div>
                 <div className='div2'>
-                    <button className='button1'>S`incrire</button>
-                    <button className='button2'>Se connecter</button>
+                    <Link to='/sign-up'> <button className='button1'> S`incrire </button> </Link>
+                    <Link to={'/log-in'}> <button className='button2'> Se connecter </button> </Link>
                 </div>
         </div>
     )
-}
+} 
 
 export default Navbar
