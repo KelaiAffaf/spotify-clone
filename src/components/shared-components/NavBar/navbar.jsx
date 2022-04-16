@@ -2,7 +2,7 @@ import React from 'react'
 import style from './style.css'
 import arrowRight from "../../../assets/images/arrowright.svg"
 import arrowLeft from "../../../assets/images/arrowleft.svg"
-function Navbar() {
+function NavBar() {
     return (
         <div className='bigdiv'>
                 <div className='div1'>
@@ -19,4 +19,4 @@ function Navbar() {
     )
 }
 
-export default Navbar
+export default NavBar
