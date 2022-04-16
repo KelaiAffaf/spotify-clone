@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   
 import {useEffect, useState} from "react";
 import './App.css';
@@ -90,6 +91,25 @@ function App() {
             </header>
         </div>
     );
+=======
+
+import { BrowserRouter, Routes ,Route } from 'react-router-dom'
+import Page1 from './pages/Page1'
+import Login from './pages/login'
+
+function App() {
+  
+
+  return (
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Page1/>} /> 
+          <Route path='/log-in' element={<Login/>} />
+          <Route path='/sign-up' />
+        </Routes>
+      </BrowserRouter>
+  )
+>>>>>>> main
 }
 
 export default App;

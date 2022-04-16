@@ -4,7 +4,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    height: 32px;
+    height:53px;
+    float: right;
+    width: calc( 100vw - 235px);
+    /* width: 100%; */
 }
 .div1{
     display: flex;
@@ -14,7 +17,6 @@
 .div1>div>img{
     width: 15px;
     height: 15px;
-   
     
 }
 .div1>div{
@@ -29,37 +31,32 @@
     cursor: not-allowed;
     
 }
-.button1{
-    
-    border-radius: 18px;
-    height: 35px;
-    border: none;
-    width: 100px;
-    background-color: transparent;
-    color: rgb(160, 162, 163);
-    font-family:Helvetica,Arial,sans-serif;
+
+.button1 , .button2 {
     font-size: 15px;
-    
-}
-.button2{
-    margin-left: 30px;
-    border-radius: 18px;
-    height: 40px;
-    border: none;
-    width: 150px;
-    font-size: 15px ;
     font-weight: 700;
     font-family:Helvetica,Arial,sans-serif;
-    
+    border-radius: 18px;
+    border: none;
+}
+.button1{
+    color: rgb(160, 162, 163);
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+}
+.button2{
     color: black;
-
+    width: 150px;    
+    height: 40px;
+    margin-left: 30px;
 }
 
 .button1:hover{
     transform: scale(1.1);
-    color: aliceblue;
-
+    color: aliceblue ;
+    
 }
 .button2:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
 }

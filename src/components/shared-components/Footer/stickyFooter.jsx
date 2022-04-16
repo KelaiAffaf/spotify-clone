@@ -1,5 +1,6 @@
 import React from 'react'
 import './footerStyle.css'
+import { Link } from 'react-router-dom'
 
 export default function StickyFooter() {
   return (
@@ -10,7 +11,7 @@ export default function StickyFooter() {
                 <p> Sign up to unlimited songs and podacts with occasional ads. No credit card needed.</p>
             </div>
             <div>
-                <button> Sign up free </button>
+              <Link to='/sign-up'><button className='Btn-footer'>  Sign up free  </button> </Link>  
             </div>
         </footer>
     </a>
