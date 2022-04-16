@@ -4,15 +4,16 @@ import {useEffect, useState} from "react";
 import axios from 'axios';
 
 function SpotifyApi() {
-    const CLIENT_ID = "4da80d4e51674f129f54a9f0961bdd03"
-    const REDIRECT_URI = "http:%2F%2Flocalhost:3000"
+    const CLIENT_ID = "21531e73bb1e42f1826e8be976dae945"
+    const REDIRECT_URI = "http://localhost:3000/"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
 
     const [token, setToken] = useState("")
     const [searchKey, setSearchKey] = useState("")
     const [artists, setArtists] = useState([])
-
+    const [artist, setArtist] = useState()
+    const [categories, setCategories] = useState([])
     // const getToken = () => {
     //     let urlParams = new URLSearchParams(window.location.hash.replace("#","?"));
     //     let token = urlParams.get('access_token');
@@ -21,19 +22,16 @@ function SpotifyApi() {
     useEffect(() => {
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
-
-        // getToken()
-
-
         if (!token && hash) {
             token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
 
             window.location.hash = ""
             window.localStorage.setItem("token", token)
         }
-
         setToken(token)
-
+        console.log(token);
+        getArtists()
+        getCategories()
     }, [])
 
     const logout = () => {
@@ -56,7 +54,28 @@ function SpotifyApi() {
 
         setArtists(data.artists.items)
     }
-   
+//    get aLL artist from spotify api
+
+const getArtists = async () => {
+    const {data} = await axios.get("https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6", {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    })
+    console.log(data.categories)   
+    setArtist(data.categories)
+}
+
+const getCategories = async () => {
+    const {data} = await axios.get("https://api.spotify.com/v1/browse/categories", {
+        headers: {
+            Authorization: `Bearer ${token}`
+        }
+    })
+    console.log(data.categories.items)
+    setCategories(data.categories.items)
+}
+
     
 
     const renderArtists = () => {
@@ -89,6 +108,17 @@ function SpotifyApi() {
                 {renderArtists()}
 
             </header>
+
+            <div>
+               {
+               categories.map((category, index) => (
+                    <div key={index}>
+                        <a href={category.href}>{category.name}</a>
+                        <img src={category.icons[0].url} alt="" />
+                    </div>
+               ))
+}
+        </div>
         </div>
     );
 }
